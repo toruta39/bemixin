@@ -1,0 +1,14 @@
+=b($name)
+  @at-root
+    .#{$name}
+      @content
+
+=e($name)
+  @at-root
+    #{&}__#{$name}
+      @content
+
+=m($name)
+  @at-root
+    #{&}--#{$name}
+      @content
