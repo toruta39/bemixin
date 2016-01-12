@@ -1,6 +1,6 @@
 {
   "name": "bemixin",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Helper mixins for BEM user",
   "main": "index.sass",
   "scripts": {
@@ -10,7 +10,12 @@
     "type": "git",
     "url": "git+https://github.com/toruta39/bemixin.git"
   },
-  "keywords": ["sass", "css", "bem", "mixin"],
+  "keywords": [
+    "sass",
+    "css",
+    "bem",
+    "mixin"
+  ],
   "author": "Joshua Zhang",
   "license": "ISC",
   "bugs": {
