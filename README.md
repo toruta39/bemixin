@@ -12,7 +12,7 @@ npm install bemixin --save-dev
 Webpack with sass-loader
 
 ```
-@import "~bemixin"
+@import "~bemixin";
 
 @include b(cat) {
   margin: 0 auto;
@@ -29,6 +29,12 @@ Webpack with sass-loader
 
   @include m(fatty) {
     width: 100%;
+
+    @include b(cat) {
+      @include e(eye) {
+        background-color: gold;
+      }
+    }
   }
 }
 ```
@@ -37,8 +43,8 @@ Output
 
 ```
 .cat {
-  width: 50%;
   margin: 0 auto;
+  width: 50%;
   background-color: white; }
 
   .cat__eye {
@@ -49,4 +55,7 @@ Output
 
   .cat--fatty {
     width: 100%; }
+
+    .cat--fatty .cat__eye {
+      background-color: gold; }
 ```

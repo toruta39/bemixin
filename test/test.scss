@@ -1,0 +1,25 @@
+@import "../index";
+
+@include b(cat) {
+  margin: 0 auto;
+  width: 50%;
+  background-color: white;
+
+  @include e(eye) {
+    background-color: blue;
+
+    @include m(left) {
+      background-color: gold;
+    }
+  }
+
+  @include m(fatty) {
+    width: 100%;
+
+    @include b(cat) {
+      @include e(eye) {
+        background-color: gold;
+      }
+    }
+  }
+}
